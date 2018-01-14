@@ -1,0 +1,68 @@
+
+.customize-button {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 60px;
+	height: 60px;
+	font-size: 28px;
+	color: #484848;
+	border-radius: 50%;
+	border: 1px solid transparent;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.7);
+	cursor: pointer;
+	outline: none;
+
+	z-index: 6;
+}
+
+.customize-container {
+	position: fixed;
+	width: 360px;
+	background-color: rgba(255,255,255,0.7);
+
+	height: 100%;
+	right: -100%;
+	top: 0;
+	overflow-y: auto;
+
+	transition: right 0.3s ease-in-out;
+}
+
+.customize-container.opened {
+	right: 0%;
+}
+
+.customize-input {
+	position: relative;
+	margin: 20px 0;
+	padding: 0 10px;
+}
+
+.customize-input label {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+}
+
+.customize-input--inside {
+	display: block;
+	width: 90%;
+	padding: 8px 10px;
+
+	box-shadow: 1px 2px 3px rgba(0,0,0,.6);
+	border: 1px solid transparent;
+	border-radius: 0;
+	outline: none;
+	font-weight: lighter;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+.customize-input--clear {
+	background-color: transparent;
+	border: 0;
+	color: #000;
+	font-size: 24px;
+	cursor:pointer;
+}

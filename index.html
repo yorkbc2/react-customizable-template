@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title data-download="true">Customizable React Template - Yiinx</title>
+	<link rel="stylesheet" href="customize.css">
+	<link data-download="true" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed|Oswald" rel="stylesheet">
+	<link data-download="true" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style id="app-style">
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: "Open Sans Condensed", sans-serif;
+		}
+
+		.container-overlay {
+			min-height: 100vh;
+			width: 100%;
+
+
+			background-position: center;
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.container-overlay--filter {
+			width: 100%;
+			min-height: 100vh;
+
+			background-color: rgba(0,0,0,.6);
+			color: #fff;
+		}
+
+		.container-overlay--filter p {
+			margin: 0;
+			padding: 5px 20px;
+		}
+
+		.container-overlay--filter-inside {
+			padding-top: 170px;
+		}
+
+		.header {
+			font-family: "Oswald", sans-serif;
+			font-weight: bolder;
+			margin: 0;
+			padding: 10px 0;
+			text-transform: uppercase;
+			padding-left: 20px;
+		}
+
+		.header h1,
+		.header h2 {
+			margin: 0;
+			padding: 0;
+		}
+
+		.header h1 {
+			font-size: 92px;
+		}
+
+		.header h2 {
+			font-size: 64px;
+		}
+
+
+		.columns-container {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-flex-direction: row;
+			-moz-flex-direction: row;
+			-ms-flex-direction: row;
+			-o-flex-direction: row;
+			flex-direction: row;
+			-webkit-flex-wrap: nowrap;
+			-moz-flex-wrap: nowrap;
+			-ms-flex-wrap: nowrap;
+			-o-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+
+			justify-content: center;
+			margin: 70px 50px;
+		}
+
+		.columns-container .column-item {
+			flex: 1;
+			text-align: center;
+		}
+
+		.columns-container .column-item .column-item--image {
+			width: 156px;
+			height: auto;	
+		}
+
+		.little-line {
+			position: relative;
+			width: 240px;
+			height: 3px;
+			border-radius: 3px;
+			margin: 20px auto;
+		}
+
+		.workers-columns {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-flex-direction: row;
+			-moz-flex-direction: row;
+			-ms-flex-direction: row;
+			-o-flex-direction: row;
+			flex-direction: row;
+			-webkit-flex-wrap: nowrap;
+			-moz-flex-wrap: nowrap;
+			-ms-flex-wrap: nowrap;
+			-o-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
+
+		.workers-columns .worker-item {
+			width: 25%;
+			background-color: #fff;
+			margin: 0 50px;
+			margin-bottom: 50px;
+			color: #000;
+		}
+
+		.workers-columns .worker-item .worker-item--image {
+			height: 180px;
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+		}
+		.workers-columns .worker-item .worker-item--image img {
+			width: 100%;
+			height: auto;
+		}
+
+		.workers-columns .worker-item .worker-item--content {
+			padding: 15px;
+		}
+
+		.workers-columns .worker-item .worker-item--content h3,
+		.workers-columns .worker-item .worker-item--content p {
+			padding: 0;
+			margin: 0;
+		}
+
+		.workers-columns .worker-item .worker-item--content p {
+			font-size: 15px;
+			margin-top: 10px;
+		}
+
+		.workers-columns .worker-item .worker-item--content .worker-item--link {
+			text-align: center;
+		}
+
+		.link-colored {
+			display: inline-block;
+			margin: 10px 0;
+			font-size: 18px;
+			color: #fff;
+			text-decoration: none;
+			padding: 10px 25px;
+			border-radius: 1px;
+			box-shadow: 1px 2px 3px rgba(0,0,0,.7);
+		}
+
+		.shadow-header {
+			font-size: 36px;
+			font-weight: bolder;
+			font-family: "Oswald", sans-serif;
+			text-align: center;
+			color: #fff;
+			text-shadow: 1px 2px 3px rgba(0,0,0,.8);
+			margin: 0;
+			padding: 0;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="app"></div>
+
+	<script src="dist/bundle.js"></script>
+</body>
+</html>
